@@ -1,0 +1,23 @@
+#back-top {
+    position: fixed; 
+    display:none; 
+    font-size: 50px;
+    color: #fff;
+    mix-blend-mode: difference;
+    bottom: 5px; 
+    right:40px; 
+    width:auto;
+  }
+  a#back-top:active {
+    background:none;
+  }
+  a#back-top {
+    display: block; 
+    text-decoration: none;
+  }
+  .topup {
+    bottom:5px;
+  }
+  #back-top i {
+    display: block;
+  }

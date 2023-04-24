@@ -1,0 +1,62 @@
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient( rgb(60, 46, 25), rgba(0, 0, 0, 0.5) ), url('https://imageio.forbes.com/specials-images/imageserve/62e8534553d3081da2006ee9/0x0.jpg?format=jpg&width=1200yarn add react-router-domyarn add react-router-dom');
+    background-size: cover;
+    align-items: center;
+    color: #fff;
+}
+
+.registerTitle {
+    font-size: 50px;
+}
+
+.registerForm {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.registerForm > label {
+    margin:  10px 0;
+}
+
+.registerInput {
+    padding: 10px;
+    background-color: #fff;
+    border: 0;
+
+}
+
+.registerButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.registerLoginButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.error {
+    color: yellow;
+    margin-top: 10px;
+}
