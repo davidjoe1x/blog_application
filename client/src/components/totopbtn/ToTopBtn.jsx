@@ -1,5 +1,5 @@
 import React from 'react'
-import './totop.css'
+import './totop.scss'
 import $ from 'jquery';
 
 

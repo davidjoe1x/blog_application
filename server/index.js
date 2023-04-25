@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
-const categoryRoute = require("./routes/Categories");
 const multer = require('multer');
 const path = require('path');
 
@@ -42,7 +41,7 @@ app.post('/server/upload', upload.single('file'),(req,res) => {
 app.use("/server/auth", authRoute);
 app.use("/server/users", userRoute);
 app.use("/server/posts", postRoute);
-app.use("/server/categories", categoryRoute);
+
 
 
 app.listen('3000', () =>

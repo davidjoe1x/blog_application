@@ -20,16 +20,55 @@
     top: 0;
     font-family: 'Josefin Sans', sans-serif;
     z-index: 999;
+
     @media only screen and (min-width:320px) and (max-width: 479px) {
         padding: 0 10px;
-       
-    
-        }
-  
+
+
+    }
+
 
 
 
 }
+
+
+.topImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+}
+
+
+.topList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.topListItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+
+
+}
+
+
+
 
 
 
@@ -37,11 +76,12 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
     @media only screen and (min-width:320px) and (max-width: 479px) {
         gap: 0;
-    
-        }
-    
+
+    }
+
 }
 
 
@@ -68,28 +108,30 @@
 .logo {
     margin-right: 30px;
     font-size: 13px;
+
     @media only screen and (min-width:320px) and (max-width: 479px) {
         margin-right: 10px;
-        }
+    }
 }
 
 .topLink {
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
+
     @media only screen and (min-width:320px) and (max-width: 479px) {
         font-size: 11px;
-    
-        }
+
+    }
 
 }
 
-.topListItem  {
+.topListItem {
     @media only screen and (min-width:320px) and (max-width: 479px) {
         margin-left: 10px;
         font-size: 13px;
-    
-        }
+
+    }
 }
 
 
@@ -99,7 +141,7 @@
         display: block;
         opacity: 1;
 
-        
+
 
     }
 
@@ -119,26 +161,26 @@
 
         @media only screen and (min-width:320px) and (max-width: 479px) {
             transform: translateY(-1000vh);
-        
-            }
+
+        }
 
     }
 
 
-.navbar  .responsive_nav {
-    transform: none;
-    background-color: #fff;
-    z-index: 9999;
- 
-}
+    .navbar .responsive_nav {
+        transform: none;
+        background-color: #fff;
+        z-index: 9999;
+
+    }
 
 
 
-nav .nav-close-btn {
-position: absolute;
-top: 2rem;
-right: 2rem;
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
 
-}
+    }
 
 }
