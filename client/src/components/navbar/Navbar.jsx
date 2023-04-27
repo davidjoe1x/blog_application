@@ -1,67 +1,59 @@
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { useRef } from 'react';
-import './navbar.scss'
-import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef } from "react";
+import "./navbar.scss";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../../components/context/Context";
 
-
-
-
 export default function Navbar() {
-  
-    
-    const navRef = useRef();
+  const navRef = useRef();
 
-    const showNavbar = () => {
-        
-        navRef.current.classList.toggle("responsive_nav");
-        
-    }
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
-    const { user, dispatch } = useContext(Context);
-    const PF = "http://localhost:3000/images/"
-  
-    const handleLogout = () => {
-      dispatch({ type: "LOGOUT" });
-    };
+  const { user, dispatch } = useContext(Context);
+  const PF = "http://localhost:3001/images/";
 
-   
-    return (
-        <div className="navbar">
-            
-            <Link className='logo topLink' to='/'><h3>Daimler </h3></Link>
-               
-            <nav ref={navRef}>
-            <Link onClick={showNavbar} className="menuLink " to="/">
-              Домой
-            </Link>
-            <Link onClick={showNavbar} className="menuLink " to="/">
-              Контакты
-            </Link>
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
 
-            <Link onClick={showNavbar} className="menuLink " to="https://www.mbzla.com/">
-              Дилер
-            </Link>
+  return (
+    <div className="navbar">
+      <Link className="logo topLink" to="/">
+        <h3>Daimler </h3>
+      </Link>
 
-            <Link onClick={showNavbar} className="menuLink " to="/write">
-              Новый пост
-            </Link>
+      <nav ref={navRef}>
+        <Link onClick={showNavbar} className="menuLink " to="/">
+          Домой
+        </Link>
+        <Link onClick={showNavbar} className="menuLink " to="/">
+          Контакты
+        </Link>
 
- 
-                <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-                    <FaTimes />
-                </button>
+        <Link
+          onClick={showNavbar}
+          className="menuLink "
+          to="https://www.mbzla.com/"
+        >
+          Дилер
+        </Link>
 
-                
+        <Link onClick={showNavbar} className="menuLink " to="/write">
+          Новый пост
+        </Link>
 
-            
-            </nav>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
 
-            <div className="burger">
-            {user ? (
+      <div className="burger">
+        {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            <img className="topImg" src={PF + user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="topList">
@@ -78,31 +70,14 @@ export default function Navbar() {
           </ul>
         )}
 
-<li className="topListItem" onClick={handleLogout}>
-            {user && "ВЫХОД"}
-          </li>
+        <li className="topListItem" onClick={handleLogout}>
+          {user && "ВЫХОД"}
+        </li>
 
-            <button className='nav-btn' onClick={showNavbar}>
-                <FaBars />
-
-            </button>
-
-         
-             
-            </div>
-
-         
-           
-          
-        
-        
-
-        </div>
-
-      
-
-
-
-    )
-
+        <button className="nav-btn" onClick={showNavbar}>
+          <FaBars />
+        </button>
+      </div>
+    </div>
+  );
 }

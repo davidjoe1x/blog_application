@@ -1,22 +1,17 @@
-import './single.scss';
-import SinglePost from '../../components/singlePost/SinglePost';
-import Sidebar from '../../components/sidebar/Sidebar';
+import "./single.scss";
+import SinglePost from "../../components/singlePost/SinglePost";
+import Sidebar from "../../components/sidebar/Sidebar";
 
 export default function Single() {
   return (
-    <div className='single'>
+    <div className="single">
       <div className="left">
-      <SinglePost />
+        <SinglePost />
       </div>
 
       <div className="right">
-      <Sidebar />
+        <Sidebar />
       </div>
-      
-      
-    
-  
- 
     </div>
-  )
+  );
 }
