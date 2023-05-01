@@ -1,15 +1,15 @@
-const express = require('express');
-const app = express();
-
 const dotenv = require('dotenv');
+const express = require('express');
 const mongoose = require('mongoose');
-const authRoute = require("./routes/auth");
-const userRoute = require("./routes/users");
-const postRoute = require("./routes/posts");
 const multer = require('multer');
 const path = require('path');
 
+const authRoute = require("./routes/auth");
+const userRoute = require("./routes/users");
+const postRoute = require("./routes/posts");
 
+const app = express();
+const PORT = process.env.PORT || 4000;
 
 dotenv.config();
 
@@ -44,7 +44,8 @@ app.use("/server/posts", postRoute);
 
 
 
-app.listen('3000', () =>
-console.log('Сервер запущен')
+app.listen(PORT, () =>
+console.log(`Сервер запущен на порту ${PORT}`)
 )
+
 

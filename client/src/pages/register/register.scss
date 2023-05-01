@@ -1,62 +1,60 @@
 .register {
-    height: calc(100vh - 50px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: linear-gradient( rgb(60, 46, 25), rgba(0, 0, 0, 0.5) ), url('http://localhost:3001/images/reg.jpeg');
-    background-size: cover;
-    align-items: center;
-    color: #fff;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgb(60, 46, 25), rgba(0, 0, 0, 0.5)),
+    url("http://localhost:4000/images/reg.jpeg");
+  background-size: cover;
+  align-items: center;
+  color: #fff;
 }
 
 .registerTitle {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .registerForm {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-
-
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .registerForm > label {
-    margin:  10px 0;
+  margin: 10px 0;
 }
 
 .registerInput {
-    padding: 10px;
-    background-color: #fff;
-    border: 0;
-
+  padding: 10px;
+  background-color: #fff;
+  border: 0;
 }
 
 .registerButton {
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: teal;
-    border: 0;
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: teal;
+  border: 0;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .registerLoginButton {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: lightcoral;
-    cursor: pointer;
-    border: 0;
-    padding: 10px;
-    color: #fff;
-    border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .error {
-    color: yellow;
-    margin-top: 10px;
+  color: yellow;
+  margin-top: 10px;
 }

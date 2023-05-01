@@ -1,108 +1,86 @@
 .fileInput {
-    display: none;
-   
-
+  display: none;
 }
 
 .writeImg {
-    margin-left: 150px;
-    width: 70vw;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-    @media only screen and (max-width: 1024px) {
-       
-        margin-left: 50px;
- 
-     }
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  @media only screen and (max-width: 1024px) {
+    margin-left: 50px;
+  }
 }
 .write {
-    padding-top: 50px;
-    
+  padding-top: 50px;
 }
 
 .writeForm {
-    position: relative;
+  position: relative;
 }
 
 .writeFormGroup {
-    margin-left: 150px;
-    display: flex;
-    align-items: center;
-    @media only screen and (max-width: 1024px) {
-       
-           margin-left: 20px;
-    
-        }
-    
-
-
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 1024px) {
+    margin-left: 20px;
+  }
 }
 
 .writeIcon {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 1px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(87, 130, 230);
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(87, 130, 230);
+  cursor: pointer;
 }
 
 .writeInput {
-    font-size: 30px;
-    border: 0;
-    padding: 20px;
-    width: 70vw;
-    @media only screen and (min-width:320px) and (max-width: 479px) {
-        
-        font-size: 13px;
-    
-        }
+  font-size: 30px;
+  border: 0;
+  padding: 20px;
+  width: 70vw;
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 13px;
+  }
 }
 
 .writeInput:focus {
-    outline: none;
+  outline: none;
 }
 
 .writeText {
-    font-size: 20px;
-    height: 100vh;
-    @media only screen and (min-width:320px) and (max-width: 479px) {
-       
-        font-size: 13px;
-    
-        }
+  font-size: 20px;
+  height: 100vh;
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 13px;
+  }
 }
 
 .writeSubmit {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    color: #fff;
-    background-color: rgb(60, 107, 226);
-    padding: 10px;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    @media only screen and (max-width: 1024px) {
-       
-        right: 20px;
- 
-     }
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: #fff;
+  background-color: rgb(60, 107, 226);
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  @media only screen and (max-width: 1024px) {
+    right: 20px;
+  }
 
-     @media only screen and (min-width:320px) and (max-width: 479px) {
-        
-        font-size: 13px;
-        padding: 7px;
-        top: 14px;
-    
-        }
- 
-
-   
-
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 13px;
+    padding: 7px;
+    top: 14px;
+  }
 }
