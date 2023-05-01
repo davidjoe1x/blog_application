@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: #333;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    padding: 0 10px;
+  }
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    gap: 0;
+  }
+}
+
+.menuLink {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: 0;
+  display: none;
+  opacity: 0;
+  font-size: 1.7rem;
+}
+
+.logo {
+  margin-right: 30px;
+  font-size: 13px;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    margin-right: 10px;
+  }
+}
+
+.topLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 11px;
+  }
+}
+
+.topListItem {
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar .nav-btn {
+    display: block;
+    opacity: 1;
+  }
+
+  .navbar nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-110vh);
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      transform: translateY(-1000vh);
+    }
+  }
+
+  .navbar .responsive_nav {
+    transform: none;
+    background-color: #fff;
+    z-index: 9999;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
